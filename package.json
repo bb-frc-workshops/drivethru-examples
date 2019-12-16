@@ -1,0 +1,28 @@
+{
+  "name": "drivethru-examples",
+  "version": "1.0.0",
+  "description": "",
+  "main": "dist/index.js",
+  "scripts": {
+    "prebuild": "tslint -c tslint.json -p tsconfig.json --fix",
+    "build": "tsc",
+    "prestart": "npm run build",
+    "start": "node .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/firmata": "^0.19.1",
+    "@types/node-gamepad": "^1.5.0",
+    "@types/node-hid": "^0.7.3",
+    "tslint": "^5.20.1",
+    "typescript": "^3.7.2"
+  },
+  "dependencies": {
+    "colors": "^1.4.0",
+    "node-gamepad": "^0.1.15",
+    "node-hid": "^1.1.0"
+  }
+}
